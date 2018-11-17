@@ -7,4 +7,4 @@ you can also get the expected health utility of alternatives in addition to
 the expected cost. Test your code on the decision tree below and 
 print the expected cost and expected health utility of nodes C1 and C3. 
 
-![Alt text](DecisionTree.png?raw=true "Optional Title")
+![Alt text](DecisionTree.png?raw=true "Test")
