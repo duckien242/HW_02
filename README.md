@@ -19,7 +19,7 @@ to learn about the debugging features of PyCharm and read
 [this post](https://blog.hartleybrody.com/debugging-code-beginner/) for
 some debugging tips. 
 
-2. <img src="https://latex.codecogs.com/svg.latex?\Large&space;x" title="\Large x" />
+2. <img src="https://latex.codecogs.com/svg.latex?\Large&space; (x_1, x_2, ..., x_n)" title="\Large (x_1, x_2, ..., x_n)" />
 
 
 3.   
