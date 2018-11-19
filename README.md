@@ -19,8 +19,7 @@ to learn about the debugging features of PyCharm and read
 [this post](https://blog.hartleybrody.com/debugging-code-beginner/) for
 some debugging tips. 
 
-2. <img src="https://latex.codecogs.com/svg.latex? x" title="x" />
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=x&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;=&space;1" title="x = 1" /></a>
 
 3.   
 
