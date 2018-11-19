@@ -19,7 +19,8 @@ to learn about the debugging features of PyCharm and read
 [this post](https://blog.hartleybrody.com/debugging-code-beginner/) for
 some debugging tips. 
 
-2. 
+2. <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+
 
 3.   
 
