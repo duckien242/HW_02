@@ -6,20 +6,13 @@ In this problem, you are asking to find and fix the bugs
 in the class `SumRatio` (in the file `\Debugging\SumRatio.py`).
 
 The class `SumRatio` has a very simple task. It gets two arrays 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space; (x_1, x_2, ..., x_n)" title="\Large (x_1, x_2, ..., x_n)" />
-and 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;(y_1, y_2, ..., y_n)" />
-and returns 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;(x_1/y_1, x_2/y_2, ..., x_n/y_n)."/>
-
+(x1, x2, ..., xn) and (y1, y2, ..., yn) and returns (x1/y1, x2/y2, ..., xn/yn). 
 1. Find and fix the bugs in the current implementation of `SumRatio` 
 such that you can run `Test1.py` script without any error. 
 Toward this, watch [this video](https://www.youtube.com/watch?v=QJtWxm12Eo0) 
 to learn about the debugging features of PyCharm and read 
 [this post](https://blog.hartleybrody.com/debugging-code-beginner/) for
 some debugging tips. 
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=x&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;=&space;1" title="x = 1" /></a>
 
 3.   
 
