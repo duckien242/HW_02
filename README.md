@@ -6,7 +6,7 @@ In this problem, you are asking to find and fix the bugs
 in the class `SumRatio` (in the file `\Debugging\SumRatio.py`).
 
 The class `SumRatio` has a very simple task. It gets two arrays 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;(x_1, x_2, ..., x_n)" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;(x_1, x_2, ..., x_n)" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 and 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;(y_1, y_2, ..., y_n)" />
 and returns 
