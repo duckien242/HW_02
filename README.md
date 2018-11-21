@@ -6,13 +6,30 @@ In this problem, you are asking to find and fix the bugs
 in the class `SumRatio` (in the file `\Debugging\SumRatio.py`).
 
 The class `SumRatio` has a very simple task. It gets two arrays 
-(x1, x2, ..., xn) and (y1, y2, ..., yn) and returns (x1/y1, x2/y2, ..., xn/yn). 
-1. Find and fix the bugs in the current implementation of `SumRatio` 
+(x1, x2, ..., xn) and (y1, y2, ..., yn), and returns the sum of element-wise ratios 
+(x1/y1 + x2/y2 + ... + xn/yn). 
+
+1. Find and fix the bugs in the current implementation of `SumRatio` class
 such that you can run `Test1.py` script without any error. 
-Toward this, watch [this video](https://www.youtube.com/watch?v=QJtWxm12Eo0) 
+*Hint:* Watch [this video](https://www.youtube.com/watch?v=QJtWxm12Eo0) 
 to learn about the debugging features of PyCharm and read 
 [this post](https://blog.hartleybrody.com/debugging-code-beginner/) for
 some debugging tips. 
+
+2. After fixing the bugs `SumRatio` class, run `Test2.py` script. 
+Note that while `SumRatio` class implicitly assumes the `x` and `y` have the same
+number of elements, the `x` and `y` used in `Test2.py` have different sizes. 
+But when you try to run `Test2.py` it runs without any issues and prints `1.0` 
+for the sum of element-wise ratios. 
+This is clearly an error. These types of errors are often hard to catch 
+because Python won't complain about them. 
+One way to safe-guard your code against 
+these sorts of error is to have Python explicitly check the assumptions
+held by classes. Read [this post](https://wiki.python.org/moin/UsingAssertionsEffectively)
+ to learn how to use `assert` for this purpose. 
+ Use `assert` in the implementation of `SumRatio` to ensure 
+ that `x` and `y` have the same size. If not, we want `assert` to display
+ `x and y should have the same number of elements.`
 
 3.   
 
