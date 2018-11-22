@@ -1,11 +1,9 @@
 # Homework Assignment 2
 
-**Problem 1: Debugging and Exception Handling (Weight 1)**. Debugging is the process of 
+**Problem 1: Debugging and Exception Handling (Weight 3)**. Debugging is the process of 
 identifying and resolving issues ('bugs') that prevent your code from running correctly.
 In this problem, you are asking to find and fix the bugs 
-in the class `SumRatio` (in the file `\Debugging\SumRatio.py`).
-
-The class `SumRatio` has a very simple task. It gets two arrays 
+in the class `SumRatio` (in the file `\Debugging\SumRatio.py`). The class `SumRatio` has a very simple task. It gets two arrays 
 (x1, x2, ..., xn) and (y1, y2, ..., yn), and returns the sum of element-wise ratios 
 (x1/y1 + x2/y2 + ... + xn/yn). 
 
@@ -19,12 +17,14 @@ some debugging tips.
 2. After fixing the bugs `SumRatio` class, run `Test2.py` script. 
 Note that while `SumRatio` class implicitly assumes the `x` and `y` have the same
 number of elements, the `x` and `y` used in `Test2.py` have different sizes. 
-But when you try to run `Test2.py` it runs without any issues and prints `1.0` 
+But when you run `Test2.py` it runs without any issues and prints `1.0` 
 for the sum of element-wise ratios. 
-This is clearly an error. These types of errors are often hard to catch 
-because Python won't complain about them. 
+This is clearly an error since the sum of element-wise ratios of 
+two arrays that have different length is not defined. 
+These types of errors are often hard to catch because Python won't complain 
+about them at run time. 
 One way to safe-guard your code against 
-these sorts of error is to have Python explicitly check the assumptions
+these such errors is to have Python explicitly check the assumptions
 held by classes. Read [this post](https://wiki.python.org/moin/UsingAssertionsEffectively)
  to learn how to use `assert` for this purpose. 
  Use `assert` in the implementation of `SumRatio` to ensure 
@@ -37,7 +37,7 @@ Watch Lecture 7 of the MIT Open Course
  [Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/lecture-7-testing-debugging-exceptions-and-assertions/)
  
 
-**Problem 2: Expected Health Utility (Weight 1)**. 
+**Problem 2: Expected Health Utility (Weight 3)**. 
 Modify the decision tree classes we implemented in class 
 (`DecisionTree.py` in this repository) such that 
 you can also get the expected health utility of alternatives in addition to 
