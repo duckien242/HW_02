@@ -1,6 +1,6 @@
 # Homework Assignment 2
 
-**Problem 1: Debugging and Exception Handling (Weight 3)**. Debugging is the process of 
+**Problem 1: Debugging and  (Weight 2)**. Debugging is the process of 
 identifying and resolving issues ('bugs') that prevent your code from running correctly.
 In this problem, you are asking to find and fix the bugs 
 in the class `SumRatio` (in the file `\Debugging\SumRatio.py`). The class `SumRatio` has a very simple task. It gets two arrays 
@@ -31,7 +31,7 @@ held by classes. Read [this post](https://wiki.python.org/moin/UsingAssertionsEf
  that `x` and `y` have the same size. If not, we want `assert` to display
  `x and y should have the same number of elements.`
 
-3.   Open `Test3.py`. Note that the second element of `y` is 0. So as expected, 
+**Problem 2: Exception Handling (Weight 2)**. Open `Test3.py`. Note that the second element of `y` is 0. So as expected, 
 when we run `Test3.py`, Python will generate a `ZeroDivisionError` and terminates 
 the execution of `Test3.py` with minimal information about what caused 
 the error (it tells us that `ZeroDivisionError` occurred in line
@@ -42,24 +42,30 @@ the error (it tells us that `ZeroDivisionError` occurred in line
  the execution) but then we want to return 'Not a number' if the denominator of
  one of the ratios is 0. 
  The simplest way to handle exceptions is with a "try-except" block. 
- In `Test3.py`, replace `sum += self.x[i]/self.y[i]` with the following:
+ Here is an example:
  
     
+        x = 10
+        y = 0
         try:
-            sum += self.x[i]/self.y[i]
+            ratio = x/y
         except ZeroDivisionError:
-            print('Division by 0 in calculating the ratio in position ' + str(i))
-            return math.nan 
+            print('Division by 0 in calculating the ratio x/y')
+
+Watch Lecture 7 of the MIT Open Course
+ [Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/lecture-7-testing-debugging-exceptions-and-assertions/)
+ to learn how to use "try-except" blocks to handle errors. 
             
-Before, running `Test3.py`, make sure to include `import math` at the top of 
-`Test3.py` to 
+Modify the class `SumRatio` such that if `ZeroDivisionError` occurred in line
+ `sum += self.x[i]/self.y[i]` your code:
+  1. prints `Warning: Division by zero occurred in calculating 
+  the ratio in position x.`, where `x` takes the value of index `i`. 
+  2. returns `math.nan` as the results of calculating the sum of ratios (not that to use `math.nan` you need to add `import math` at the
+  top of `SumRatio.py`). 
 
-If you would like to learn more about debugging and exception handling techniques, 
-watch Lecture 7 of the MIT Open Course
- [Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/lecture-7-testing-debugging-exceptions-and-assertions/).
- 
 
-**Problem 2: Expected Health Utility (Weight 3)**. 
+
+**Problem 3: Expected Health Utility (Weight 3)**. 
 Modify the decision tree classes we implemented in class 
 (`DecisionTree.py` in this repository) such that 
 you can also get the expected health utility of alternatives in addition to 
