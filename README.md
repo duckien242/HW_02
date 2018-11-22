@@ -31,10 +31,32 @@ held by classes. Read [this post](https://wiki.python.org/moin/UsingAssertionsEf
  that `x` and `y` have the same size. If not, we want `assert` to display
  `x and y should have the same number of elements.`
 
-3.   
+3.   Open `Test3.py`. Note that the second element of `y` is 0. So as expected, 
+when we run `Test3.py`, Python will generate a `ZeroDivisionError` and terminates 
+the execution of `Test3.py` with minimal information about what caused 
+the error (it tells us that `ZeroDivisionError` occurred in line
+ `sum += self.x[i]/self.y[i]` but it doesn't specify calculating which
+ ratio caused the error). Also, in many cases, we would like to 
+ handle errors in a specific way. For example in this exercise, we are going to 
+ assume that division by zero is accepted (and hence should not terminate 
+ the execution) but then we want to return 'Not a number' if the denominator of
+ one of the ratios is 0. 
+ The simplest way to handle exceptions is with a "try-except" block. 
+ In `Test3.py`, replace `sum += self.x[i]/self.y[i]` with the following:
+ 
+    
+        try:
+            sum += self.x[i]/self.y[i]
+        except ZeroDivisionError:
+            print('Division by 0 in calculating the ratio in position ' + str(i))
+            return math.nan 
+            
+Before, running `Test3.py`, make sure to include `import math` at the top of 
+`Test3.py` to 
 
-Watch Lecture 7 of the MIT Open Course
- [Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/lecture-7-testing-debugging-exceptions-and-assertions/)
+If you would like to learn more about debugging and exception handling techniques, 
+watch Lecture 7 of the MIT Open Course
+ [Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/lecture-7-testing-debugging-exceptions-and-assertions/).
  
 
 **Problem 2: Expected Health Utility (Weight 3)**. 
