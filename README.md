@@ -75,4 +75,6 @@ print the expected cost and expected health utility of nodes C1 and C3.
 ![Alt text](DecisionTree/DecisionTree.png?raw=true "Test")
 
 
-  
+ **Problem 4: Economic Evaluation (Weight 1)**.
+ For the decision tree you created in Problem 3, calculate the incremental cost-effectiveness ratio (ICER) of Arm 2 
+ with respect to Arm 3.  
