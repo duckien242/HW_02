@@ -1,4 +1,5 @@
-import math as math
+import math
+
 
 class SumRatio:
     def __init__(self, x, y):
@@ -6,10 +7,11 @@ class SumRatio:
         :param x: (list) of numbers
         :param y: (list) of numbers
         """
+
+        assert len(x) == len(y), 'x and y should have the same number of elements.'
+
         self.x = x
         self.y = y
-
-        assert len(x) == len(y), 'x and y should have the same number of elements'
 
     def get_sum_ratio(self):
         """
@@ -19,13 +21,13 @@ class SumRatio:
         # number of ratios to calculate
         num_of_elements = len(self.x)
 
-
         # sum all ratios
         sum = 0
-        for i in range(1, num_of_elements):
+        for i in range(0, num_of_elements):
             try:
-                sum = self.x[i]/self.y[i]
+                 sum += self.x[i]/self.y[i]
             except ZeroDivisionError:
-                print('Warning: Division by 0 in calculating the ratio in position' + str(i))
+                print('Warning: Division by 0 in calculating the ratio in position ' + str(i))
                 return math.nan
+
         return sum
