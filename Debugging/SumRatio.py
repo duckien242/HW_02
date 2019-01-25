@@ -1,3 +1,4 @@
+
 class SumRatio:
     def __init__(self, x, y):
         """
