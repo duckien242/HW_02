@@ -1,4 +1,3 @@
-
 class Node:
     """ base (master) class for nodes """
     def __init__(self, name, cost):
