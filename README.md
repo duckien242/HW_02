@@ -25,7 +25,7 @@ These types of errors are often hard to catch because Python won't complain
 about them at run time. 
 One way to safe-guard your code against 
 these such errors is to have Python explicitly check the assumptions
-held by classes. Read [this post](https://wiki.python.org/moin/UsingAssertionsEffectively)
+held by classes. Read [this post](https://www.programiz.com/python-programming/assert-statement)
  to learn how to use `assert` for this purpose. 
  Use `assert` in the implementation of `SumRatio` to ensure 
  that `x` and `y` have the same size. If not, we want `assert` to display
