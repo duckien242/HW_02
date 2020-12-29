@@ -1,6 +1,6 @@
 # Homework Assignment 2
 
-**Problem 1: Debugging and  (Weight 2)**. Debugging is the process of 
+**Problem 1: Debugging (Weight 2)**. Debugging is the process of 
 identifying and resolving issues ('bugs') that prevent your code from running correctly.
 In this problem, you are asking to find and fix the bugs 
 in the class `SumRatio` (in the file `\Debugging\SumRatio.py`). The class `SumRatio` has a very simple task. It gets two arrays 
