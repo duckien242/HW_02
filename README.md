@@ -2,7 +2,7 @@
 
 **Problem 1: Debugging (Weight 2)**. Debugging is the process of 
 identifying and resolving issues ('bugs') that prevent your code from running correctly.
-In this problem, you are asking to find and fix the bugs 
+In this problem, you are asked to find and fix the bugs 
 in the class `SumRatio` (in the file `\Debugging\SumRatio.py`). The class `SumRatio` has a very simple task. It gets two arrays 
 (x1, x2, ..., xn) and (y1, y2, ..., yn), and returns the sum of element-wise ratios 
 (x1/y1 + x2/y2 + ... + xn/yn). 
