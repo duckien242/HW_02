@@ -14,7 +14,7 @@ to learn about the debugging features of PyCharm and read
 [this post](https://blog.hartleybrody.com/debugging-code-beginner/) for
 some debugging tips. 
 
-2. After fixing the bugs `SumRatio` class, run `Test2.py` script. 
+2. After fixing bugs in the `SumRatio` class, run `Test2.py` script. 
 Note that while `SumRatio` class implicitly assumes the `x` and `y` have the same
 number of elements, the `x` and `y` used in `Test2.py` have different sizes. 
 But when you run `Test2.py` it runs without any issues and prints `1.0` 
