@@ -58,8 +58,7 @@ Watch Lecture 7 of the MIT Open Course
             
 Modify the class `SumRatio` such that if `ZeroDivisionError` occurred in line
  `sum += self.x[i]/self.y[i]` your code:
-  1. prints `Warning: Division by zero occurred in calculating 
-  the ratio in position x.`, where `x` takes the value of index `i`. 
+  1. prints `Warning: Division by zero occurred in calculating the ratio in position x.`, where `x` takes the value of index `i`. 
   2. returns `math.nan` as the results of calculating the sum of ratios (not that to use `math.nan` you need to add `import math` at the
   top of `SumRatio.py`). 
 
